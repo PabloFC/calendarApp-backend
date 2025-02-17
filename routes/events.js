@@ -16,6 +16,7 @@ const {
 const router = Router();
 
 // Todas tienen que pasar por la validación del JWT
+// en vez de poner el middleware en cada uno de los endpoints
 router.use(validarJWT);
 
 //Obtener eventos
